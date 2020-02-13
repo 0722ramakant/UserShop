@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCart">
+
+    <android.support.v7.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/lt"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/ll"
+        android:layout_height="wrap_content">
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_above="@+id/order"
+            android:id="@+id/recycleaddtcart1"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/ll"
+        android:background="@color/gray"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+           android:gravity="center"
+            android:textSize="18sp"
+
+            android:id="@+id/next"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text="Continue"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="₹ 40000"
+            android:id="@+id/totalamount"
+            android:textSize="18sp"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CartoonBoxPice">
+
+    <android.support.v7.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l1"
+
+        >
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/android"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#D2969690" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:text="Fortune Sunlite Refind Sunflower Oil" />
+    <TextView
+        android:id="@+id/txtbrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="15dp"
+        android:text="Fortune" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 300"
+            android:id="@+id/txtprice"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/price"
+
+            android:layout_marginLeft="50dp"
+            android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txtweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="600 gm"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/bagprice"
+            android:layout_marginLeft="15dp"
+
+            android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Box Price"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/txtoneboxprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 3000"
+            android:layout_marginLeft="53dp"
+            android:textSize="14sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bagprice"
+            android:layout_marginLeft="60dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txtoneboxweight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 pices"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/numberofbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="Box"/>
+
+            <TextView
+                android:id="@+id/boxprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:text="₹ 0"/>
+
+
+
+        </LinearLayout>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/numberbutton1"
+            android:layout_width="100dp"
+            android:layout_marginLeft="5dp"
+            app:textSize="8sp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            app:initialNumber="0"
+            app:backGroundColor="#D2969690"
+            app:finalNumber="100"
+            android:layout_height="35dp">
+
+
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/bagprice1"
+            android:layout_marginLeft="15dp"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cartoon Price"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/txtonecartoonprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 3000"
+                android:layout_marginLeft="30dp"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bagprice1"
+            android:layout_marginLeft="60dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txtonecartoonweight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 pices"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/gray">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/numberofcartoon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="Cartoon"/>
+
+            <TextView
+                android:id="@+id/cartoonprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:text="₹ 0"/>
+
+
+
+        </LinearLayout>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/numberbutton2"
+            android:layout_width="100dp"
+            android:layout_marginLeft="5dp"
+            app:textSize="8sp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            app:initialNumber="0"
+            app:backGroundColor="#D2969690"
+            app:finalNumber="100"
+            android:layout_height="35dp">
+
+
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Description"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txtdescription"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Product Description"
+        android:textSize="14sp"/>
+
+
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/addtocart"
+            android:layout_height="50dp">
+
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/totalprice"
+                    android:background="@color/gray"
+                    android:textColor="@color/black"
+                    android:text="₹ 0"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/addtocartcbp"
+                    android:background="@color/colorPrimary"
+                    android:layout_toRightOf="@+id/totalprice"
+                    android:textColor="@color/white"
+                    android:text="Add to Cart"/>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
